@@ -5,7 +5,7 @@ from django.urls import reverse
 
 from djgeojson.fields import PointField
 
-from market.apps.core.models import (RandomSlugModel,
+from marketplace.apps.core.models import (RandomSlugModel,
                                      UserProfile)
 
 

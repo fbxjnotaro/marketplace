@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from market.apps.messaging.views import (MessageCreateView,
+from marketplace.apps.messaging.views import (MessageCreateView,
                                         MessageDetailView,
                                         MessageListView,
                                         )

@@ -7,7 +7,7 @@ from django_extensions.db.models import (ActivatorModel,
 from djgeojson.fields import PointField
 from tagulous.models import TagField
 
-from market.apps.core.models import (RandomSlugModel,
+from marketplace.apps.core.models import (RandomSlugModel,
                                      UserProfile)
 
 

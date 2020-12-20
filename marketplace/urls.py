@@ -13,7 +13,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     # Messaging app
-    url(r'messaging/', include('market.apps.messaging.urls')),
+    url(r'messaging/', include('marketplace.apps.messaging.urls')),
 
     # Remove logout confirmation
     # Note: Needs to be changed to redirect to ACCOUNT_LOGOUT_REDIRECT_URL
@@ -21,10 +21,10 @@ urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
 
     # Social app
-    url(r'^', include('market.apps.social.urls')),
+    url(r'^/', include('marketplace.apps.social.urls')),
 
     # Board app
-    url(r'^', include('market.apps.board.urls')),
+    url(r'^/', include('marketplace.apps.board.urls')),
 
 ]
 

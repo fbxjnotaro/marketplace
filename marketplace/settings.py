@@ -48,10 +48,10 @@ INSTALLED_APPS = [
 
 LOCAL_APPS = [
     'market',
-    'market.apps.board',
-    'market.apps.core',
-    'market.apps.messaging',
-    'market.apps.social',
+    'marketplace.apps.board',
+    'marketplace.apps.core',
+    'marketplace.apps.messaging',
+    'marketplace.apps.social',
 ]
 
 # See: https://docs.djangoproject.com/en/1.11/ref/settings/#installed-apps
@@ -70,7 +70,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     # Custom middleware
-    'market.apps.core.middleware.UserProfileMiddleware',
+    'marketplace.apps.core.middleware.UserProfileMiddleware',
 ]
 
 
@@ -136,8 +136,8 @@ TEMPLATES = [
                 'django.template.context_processors.static',
 
                 # Custom context processors
-                'market.apps.core.context_processors.customization',
-                'market.apps.core.context_processors.user_profile',
+                'marketplace.apps.core.context_processors.customization',
+                'marketplace.apps.core.context_processors.user_profile',
 
             ],
         },
@@ -187,10 +187,10 @@ MEDIA_URL = '/media/'
 
 # URL CONFIGURATION
 # ---
-ROOT_URLCONF = 'market.urls'
+ROOT_URLCONF = 'marketplace.urls'
 
 # See: https://docs.djangoproject.com/en/1.11/ref/settings/#wsgi-application
-WSGI_APPLICATION = 'market.wsgi.application'
+WSGI_APPLICATION = 'marketplace.wsgi.application'
 
 
 # AUTHENTICATION CONFIGURATION
@@ -218,11 +218,11 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_USER_MODEL_USERNAME_FIELD = 'username'
 ACCOUNT_FORMS = {
-    'login': 'market.apps.core.forms.MarketLoginForm',
-    'signup': 'market.apps.core.forms.MarketSignupForm',
+    'login': 'marketplace.apps.core.forms.MarketLoginForm',
+    'signup': 'marketplace.apps.core.forms.MarketSignupForm',
 }
 # We use a custom signup form but this is an integrated way to customize the behavior afterward
-ACCOUNT_SIGNUP_FORM_CLASS = 'market.apps.social.forms.UserProfileForm'
+ACCOUNT_SIGNUP_FORM_CLASS = 'marketplace.apps.social.forms.UserProfileForm'
 # Don't display the logout confirmation
 ACCOUNT_LOGOUT_ON_GET = True
 # User display value is name from the associated profile

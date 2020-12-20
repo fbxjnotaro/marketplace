@@ -12,12 +12,12 @@ from extra_views import (CreateWithInlinesView,
 from functools import reduce
 from itertools import chain
 from operator import and_, or_
-from market.apps.board.forms import (ImageHelper,
+from marketplace.apps.board.forms import (ImageHelper,
                                      PostForm,
                                      PostUpdateForm)
-from market.apps.board.models import (Post,
+from marketplace.apps.board.models import (Post,
                                       PostImage)
-from market.apps.core.mixins import (CreateWithOwnerMixin,
+from marketplace.apps.core.mixins import (CreateWithOwnerMixin,
                                      OwnerRequiredMixin,
                                      SellerRequiredMixin)
 

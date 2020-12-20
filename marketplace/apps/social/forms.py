@@ -5,8 +5,8 @@ from crispy_forms import (bootstrap,
 from crispy_forms.helper import FormHelper
 from leaflet.forms.widgets import LeafletWidget
 
-from market.apps.core.models import UserProfile
-from market.apps.social.models import (Review,
+from marketplace.apps.core.models import UserProfile
+from marketplace.apps.social.models import (Review,
                                        SocialProfile)
 
 

@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from market.apps.social.views import (ReviewCreateView,
+from marketplace.apps.social.views import (ReviewCreateView,
                                       ReviewDetailView,
                                       SocialProfileDetailView,
                                       SocialProfileSelfDetailView,

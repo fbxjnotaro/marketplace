@@ -1,7 +1,7 @@
 from django.contrib.auth.mixins import (LoginRequiredMixin,
                                         UserPassesTestMixin)
 
-from market.apps.core.models import UserProfile
+from marketplace.apps.core.models import UserProfile
 
 
 class CreateWithOwnerMixin(LoginRequiredMixin):
