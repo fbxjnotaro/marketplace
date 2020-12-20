@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from market.apps.board.views import (PostCreateView,
+from marketplace.apps.board.views import (PostCreateView,
                                      PostDeleteView,
                                      PostDetailView,
                                      # PostListView,

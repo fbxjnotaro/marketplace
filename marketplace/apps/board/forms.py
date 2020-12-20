@@ -6,7 +6,7 @@ from crispy_forms.helper import FormHelper
 
 from leaflet.forms.widgets import LeafletWidget
 
-from market.apps.board.models import Post
+from marketplace.apps.board.models import Post
 
 # Form to handle the niput of images.
 class ImageHelper(FormHelper):

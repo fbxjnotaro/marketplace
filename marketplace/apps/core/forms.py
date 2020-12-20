@@ -6,7 +6,7 @@ from crispy_forms import (bootstrap,
                           layout)
 from crispy_forms.helper import FormHelper
 
-from market.apps.core.models import UserProfile
+from marketplace.apps.core.models import UserProfile
 
 
 class MarketLoginForm(LoginForm):
