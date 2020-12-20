@@ -41,8 +41,15 @@ setuptools.setup(
    # ],
     package_data={
         'marketplace': [
-            'templates/marketplace/*.html', 'static/marketplace/js/*.js',
-            'static/marketplace/img/*.svg', 'static/marketplace/scss/*.scss',
+            'templates/marketplace/*.html',
+            'templates/marketplace/account/*.html',
+            'templates/marketplace/board/*.html',
+            'templates/marketplace/messaging/*.html',
+            'templates/marketplace/settings/*.html',
+            'templates/marketplace/social/*.html',
+            'static/marketplace/js/*.js',
+            'static/marketplace/img/*.svg',
+            'static/marketplace/scss/*.scss',
             'static/marketplace/scss/bootstrap4_2/*.scss',
             'static/marketplace/scss/bootstrap4_2/mixin/*.scss',
             'static/marketplace/scss/bootstrap4_2/utilities/*.scss'
