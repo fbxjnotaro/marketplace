@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="Marketplace", # Replace with your own username
-    version="0.0.1.3",
+    version="0.0.1.4",
     author="functionalbox europe",
     author_email="support@functionalbox.eu",
     description="Market Place System for Django Framework",
@@ -40,6 +40,12 @@ setuptools.setup(
    #     'marketplace.apps.social',
    # ],
     package_data={
-        'marketplace': ['templates/marketplace/*.html', 'static/marketplace/*.js']
+        'marketplace': [
+            'templates/marketplace/*.html', 'static/marketplace/js/*.js',
+            'static/marketplace/img/*.svg', 'static/marketplace/scss/*.scss',
+            'static/marketplace/scss/bootstrap4_2/*.scss',
+            'static/marketplace/scss/bootstrap4_2/mixin/*.scss',
+            'static/marketplace/scss/bootstrap4_2/utilities/*.scss'
+        ]
     },
 )
